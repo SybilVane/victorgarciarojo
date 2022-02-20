@@ -14,7 +14,6 @@ const Container = styled.div`
 
 const IntroContainer = styled.div`
   padding: 3rem;
-  margin-bottom: 10rem;
   border-color: white;
   border-width: 2px;
   border-style: solid;

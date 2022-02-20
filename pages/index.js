@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "./components/header";
 import About from "./components/about";
 import Work from "./components/work";
+import Published from "./components/published";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <About />
       <Work />
+      <Published />
     </div>
   );
 }

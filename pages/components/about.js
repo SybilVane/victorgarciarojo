@@ -13,7 +13,7 @@ function About() {
   return (
     <div className='flex-column'>
       <Text>
-        <Fade left>
+        <Fade duration={2000}>
           <h2>Multidisciplinary Artist</h2>
           <p>
             I love developing games using 2D, 3D, pixel art, animation, and

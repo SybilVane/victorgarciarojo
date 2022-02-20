@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: relative;
+  position: absolute;
+  top: calc(100% - 85px);
   width: 24px;
   height: 24px;
 `;

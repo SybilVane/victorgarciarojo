@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "./components/header";
 import About from "./components/about";
 import Work from "./components/work";
 import Published from "./components/published";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
       <About />
       <Work />
       <Published />
+      <Contact />
     </div>
   );
 }

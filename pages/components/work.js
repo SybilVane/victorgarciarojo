@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Fade } from "react-reveal";
-import { worklist } from "./worklist";
+import { worklist } from "../../public/worklist";
 
 const WorkContainer = styled.div`
   padding: 0 3rem;
@@ -28,9 +28,6 @@ const WorkTitle = styled.div`
   margin-top: 0.8rem;
   font-weight: 400;
 `;
-const WorkCaption = styled.div`
-  font-size: 0.8rem;
-`;
 
 function Work() {
   return (
@@ -40,7 +37,6 @@ function Work() {
           <Fade duration={2000}>
             <WorkImg src={work.src} />
             <WorkTitle>{work.title}</WorkTitle>
-            <WorkCaption>{work.description}</WorkCaption>
           </Fade>
         </WorkBox>
       ))}

@@ -1,5 +1,4 @@
-This project is a personal portfolio and profile I made for an incredibly talented artist everyone should know about... 😉  <br> 
-You can visit it here: [victorgarciarojo.com](http://victorgarciarojo.com/).
+This project is a personal portfolio and profile I made for an incredibly talented artist everyone should know about... You can visit it here: [victorgarciarojo.com](http://victorgarciarojo.com/).
 
 Developed using [Next.js](https://nextjs.org/) and exported as a static webpage. 
 Responsive design and styled-components.

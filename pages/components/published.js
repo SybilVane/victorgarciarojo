@@ -28,21 +28,8 @@ const Information = styled.div`
   max-width: 70vw;
 `;
 
-const publishedGamesKeys = publishedTitles.map((title, key) => key);
-const publishedGamesInitialState = {};
-
-publishedGamesKeys.map((key) => (publishedGamesInitialState[key] = false));
-
-const unreleasedGamesKeys = unreleasedTitles.map(
-  (title, key) => key + publishedGamesKeys.length
-);
-
-unreleasedGamesKeys.map((key) => (publishedGamesInitialState[key] = false));
-
 function Published() {
-  const [isInfoVisible, setIsInfoVisible] = useState(
-    publishedGamesInitialState
-  );
+  const [isInfoVisible, setIsInfoVisible] = useState({});
 
   const clickHandler = (i) => {
     setIsInfoVisible({
@@ -83,11 +70,11 @@ function Published() {
         {unreleasedTitles.map((game, i) => (
           <GameBox key={game.title}>
             <ClickableTitle
-              onClick={() => clickHandler(i + publishedGamesKeys.length)}
+              onClick={() => clickHandler(i + publishedTitles.length)}
             >
               {game.title}
             </ClickableTitle>
-            <Information visible={isInfoVisible[i + publishedGamesKeys.length]}>
+            <Information visible={isInfoVisible[i + publishedTitles.length]}>
               {game.description}
             </Information>
           </GameBox>
